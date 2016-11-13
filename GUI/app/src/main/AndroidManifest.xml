@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.pjatk.guiapp">
 
+    <permission-group android:name="pl.pjatk.guiapp.permissions" android:label="GUIAPP permissions"/>
+    <permission android:name="pl.pjatk.guiapp.permissions.reciver"
+        android:permissionGroup="pl.pjatk.guiapp.permissions"
+        android:label="reciver permission" />
+
+    <uses-permission android:name="pl.pjatk.guiapp.permissions.reciver" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

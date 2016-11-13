@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name="MyReceiver">
+        <receiver android:name="MyReceiver" android:permission="pl.pjatk.guiapp.permissions.reciver">
 
             <intent-filter>
                 <action android:name="pl.pjatk.guiapp.CUSTOM_INTENT">
